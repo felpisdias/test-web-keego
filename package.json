@@ -1,0 +1,23 @@
+{
+  "name": "test-web-keego",
+  "version": "1.0.0",
+  "description": "Projeto para resolução de teste tecnico",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felpisdias/test-web-keego.git"
+  },
+  "author": "Felipe Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felpisdias/test-web-keego/issues"
+  },
+  "homepage": "https://github.com/felpisdias/test-web-keego#readme",
+  "dependencies": {
+    "cypress": "^7.3.0"
+  }
+}
