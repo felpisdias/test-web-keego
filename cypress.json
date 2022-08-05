@@ -1,5 +1,12 @@
 {
     "e2e": {
         "baseUrl": "http://automationpractice.com/index.php"
-    }
+    },
+    "integrationFolder": ".",
+    "testFiles": [
+        "./cypress/integration/step/login.spec.js",
+        "./cypress/integration/step/search.spec.js",
+        "./cypress/integration/step/cart.spec.js",
+        "./cypress/integration/step/order.spec.js"
+    ]
 }
