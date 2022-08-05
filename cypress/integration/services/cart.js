@@ -18,7 +18,7 @@ export function deleteProductCart() {
     cy.get(fieldsLabel.cartSummary).invoke('text').then((text) => {
         expect(text.trim()).contains(texts.cartSummary)
     });
-    cy.get(fieldsLabel.orderDetail).should('be.visible');
+    cy.get(fieldsLabel.orderDetails).should('be.visible');
     cy.get(fieldsLabel.orderCartDelete).click();
     cy.get(fieldsLabel.cartEmpty).invoke('text').then((text) => {
         expect(text.trim()).contains(texts.cartEmpty)
