@@ -8,5 +8,6 @@
         "./cypress/integration/step/search.spec.js",
         "./cypress/integration/step/cart.spec.js",
         "./cypress/integration/step/order.spec.js"
-    ]
+    ],
+    "defaultCommandTimeout": 10000
 }
