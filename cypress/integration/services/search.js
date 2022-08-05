@@ -15,10 +15,10 @@ export function searchFail() {
 export function searchSuccess() {
     cy.visit('/');
     cy.get(fieldsLabel.fieldSearch).should('be.visible');
-    cy.get(fieldsLabel.fieldSearch).type(inputs.sucessSearch);
+    cy.get(fieldsLabel.fieldSearch).type(inputs.clothingSearch);
     cy.get(fieldsLabel.buttonSearch).click();
     cy.get(fieldsLabel.searchResult).should('be.visible');
     cy.get(fieldsLabel.searchResult).invoke('text').then((text) => {
-        expect(text.trim()).contains(texts.sucessSearch)
+        expect(text.trim()).contains(texts.clothingSearch)
     });
 }
