@@ -23,5 +23,4 @@ export function deleteProductCart() {
     cy.get(fieldsLabel.cartEmpty).invoke('text').then((text) => {
         expect(text.trim()).contains(texts.cartEmpty)
     });
-    cy.wait(100000);
 }
