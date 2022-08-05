@@ -1,28 +1,25 @@
 import * as fieldsLabel from '../utils/fields-labels'
-import * as credentials from '../utils/credentials'
-import * as texts from '../utils/texts'
+import * as inputs from '../utils/inputs'
+import * as texts from '../utils/assertsText'
 
 export function loginFail() {
     cy.visit('/');
     cy.get(fieldsLabel.signInButton).click();
-    cy.get(fieldsLabel.fieldEmail).type(credentials.failEmail);
-    cy.get(fieldsLabel.fieldPasswd).type(credentials.failPasswd);
+    cy.get(fieldsLabel.fieldEmail).type(inputs.failEmail);
+    cy.get(fieldsLabel.fieldPasswd).type(inputs.failPasswd);
     cy.get(fieldsLabel.submitLogin).click();
     cy.get(fieldsLabel.loginFail).invoke('text').then((text) => {
         expect(text.trim()).equal(texts.loginFail)
     });
-    cy.wait(10000);
 }
 
 export function loginSuccess() {
     cy.visit('/');
     cy.get(fieldsLabel.signInButton).click();
-    cy.get(fieldsLabel.fieldEmail).type(credentials.sucessEmail);
-    cy.get(fieldsLabel.fieldPasswd).type(credentials.sucessPasswd);
+    cy.get(fieldsLabel.fieldEmail).type(inputs.sucessEmail);
+    cy.get(fieldsLabel.fieldPasswd).type(inputs.sucessPasswd);
     cy.get(fieldsLabel.submitLogin).click();
     cy.get(fieldsLabel.loginSuccess).invoke('text').then((text) => {
         expect(text.trim()).equal(texts.loginSuccess)
     });
-
-    cy.wait(100000);
 }
