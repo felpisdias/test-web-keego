@@ -3,3 +3,5 @@ export const loginSuccess = 'Welcome to your account. Here you can manage all of
 export const searchFail = 'No results were found for your search';
 export const addedToCart = 'Product successfully added to your shopping cart';
 export const sucessSearch = 'Faded Short Sleeve T-shirts';
+export const cartSummary = 'Shopping-cart summary';
+export const cartEmpty = 'Your shopping cart is empty.';
